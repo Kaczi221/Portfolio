@@ -12,7 +12,7 @@ header {
     display: flex;
     position: fixed;
     width:100vw;
-    background:rgba(255, 255, 255, 0.397);
+    background:rgba(255, 255, 255, 0.85);
     font-family: 'Nunito', sans-serif;
     justify-content: space-between;
     align-items: center;
@@ -39,7 +39,7 @@ header > ul > li:hover {
 }
 header > ul > li > a {
     text-decoration: none;
-    color:white;
+    color:rgb(0, 0, 0);
 }
 header > ul > li > a:hover {
     color:rgb(78, 236, 78);
@@ -92,9 +92,41 @@ header > button {
     cursor: pointer;
     transition: all 0.5s ease-in-out;
 }
+.about-container {
+    font-family: 'Nunito', sans-serif;
+    display:flex;
+    width: 100vw;
+    height: 80vh;
+    background: rgb(46, 46, 46);
+}
+.about-info {
+    width: 50%;
+    font-size: 35px;
+    color: white;
+    font-weight: 300;
+    display:flex;
+    padding:20px;
+    align-items:center;
+    justify-content: center;
+}
+.me-image {
+    width: 50%;
+    padding:20px;
+    color: rgb(200, 200, 200);
+    font-size: 20px;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.me-image > img {
+   width: 400px;
+   height: 550px;
+   border-radius: 20px;
+}
 .stack-container {
     width: 100vw;
-    height: 70%;
+    height: 70vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -102,9 +134,113 @@ header > button {
 }
 .stack-info {
     width: 50%;
+    padding: 0 20px;
+}
+.stack-info > p {
+    color:white;
+    font-size: 30px;
+    animation: text-light 2.5s infinite;
 }
 .skills {
     width: 50%;
     padding:20px;
     font-family: 'Nunito', sans-serif;
+    color: white;
+    font-size: 25px;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.skills > h1 {
+    margin-left:auto;
+    margin-right: auto;
+}
+.progress-bar {
+    margin-top:7px;
+    margin-bottom: 7px;
+    height: 20px;
+    width: 450px;
+    border:none;
+    border-radius: 10px;
+    background-color: gainsboro;
+}
+.html {
+    height: 20px;
+    width: 0%;
+    border:none;
+    border-radius: 10px;
+    background-color: hotpink;
+    box-shadow:0 0 3px 1px rgb(255, 138, 196);
+    animation: html-anim 3s forwards;
+}
+.css {
+    height: 20px;
+    width: 0%;
+    border:none;
+    border-radius: 10px;
+    background-color: hotpink;
+    box-shadow:0 0 3px 1px rgb(255, 138, 196);
+    animation: css-anim 3s forwards;
+}
+.js {
+    height: 20px;
+    width: 0%;
+    border:none;
+    border-radius: 10px;
+    background-color: hotpink;
+    box-shadow:0 0 3px 1px rgb(255, 138, 196);
+    animation: javascript-anim 3s forwards;
+}
+.scss {
+    height: 20px;
+    width: 0%;
+    border:none;
+    border-radius: 10px;
+    background-color: hotpink;
+    box-shadow:0 0 3px 1px rgb(255, 138, 196);
+    animation: scss-anim 3s forwards;
+}
+.wp {
+    height: 20px;
+    width: 0%;
+    border:none;
+    border-radius: 10px;
+    background-color: hotpink;
+    box-shadow:0 0 3px 1px rgb(255, 138, 196);
+    animation: wp-anim 3s forwards;
+}
+/*
+Animacje
+*/
+@keyframes html-anim {
+    0% {width:0%;}
+    100% {width: 91%;}
+}
+@keyframes css-anim {
+    0% {width:0%;}
+    100% {width: 88%;}
+}
+@keyframes javascript-anim {
+    0% {width:0%;}
+    100% {width: 74%;}
+}
+@keyframes scss-anim {
+    0% {width:0%;}
+    100% {width: 81%;}
+}
+@keyframes wp-anim {
+    0% {width:0%;}
+    100% {width: 87%;}
+}
+@keyframes text-light {
+    0% { 
+        
+       }
+    50% {
+        text-shadow: 0 0 3px rgb(255, 255, 255);
+        }
+    100% {
+        
+    }
 }
